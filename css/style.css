@@ -1,0 +1,35 @@
+/*
+.border {
+    border: 5px solid black;
+}
+*/
+
+body {
+    background-image: url(../img/patternBackground.png);
+}
+
+main {
+    margin-top: 80px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.topImages {
+    padding-top: 30px;
+}
+
+.theQuestions {
+    margin-left: 40%;
+}
+
+.result {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: 3px, solid, red;
+}
+
+.nextButton {
+    margin-top: 200px;
+    margin-left: 45%;
+}

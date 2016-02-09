@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <body>
+
+
+
+        <main class="container">
+            <section class="row border topImages">
+                <div class="col-xs-4 col-md-4 border"><img src="img/mad-lib-happy-face.png"></div>
+                <div class="col-xs-8 col-md-8"><img src="img/ng-mad-libs-logo.png"></div>
+            </section>
+
+
+            <section class="row border questions">
+
+                <div class="col-x s-12 col-md-12 theQuestions">
+                    <input id="femaleName" type="text" ng-model="FemaleName" ng-init="FemaleName=''" placeholder="Female Name">
+                    <input id="jobTitle" type="text" ng-model="JobTitle" ng-init="JobTitle=''" placeholder="Job Title">
+                    <input id="tediousTask" type="text" ng-model="TediousTask" ng-init="TediousTask=''" placeholder="Tedious Task">
+                    <input id="dirtyTask" type="text" ng-model="DirtyTask" ng-init="DirtyTask=''" placeholder="Dirty Task">
+                    <input id="celeberity" type="text" ng-model="Celeberity" ng-init="Celeberity=''" placeholder="Celeberity">
+                    <input id="uselessSkill" type="text" ng-model="UselessSkill" ng-init="UselessSkill=''" placeholder="Useless Skill">
+                    <input id="obnoxiousCeleberity" type="text" ng-model="ObnoxiousCeleberity" ng-init="ObnoxiousCeleberity=''" placeholder="Obnoxious Celeberity">
+                    <input id="hugeNumber" type="text" ng-model="HugeNumber" ng-init="HugeNumber=''" placeholder="Huge Number">
+                    <input id="adjective" type="text" ng-model="Adjective" ng-init="Adjective=''" placeholder="Adjective">
+                </div>
+            </section>
+
+            <button class="nextButton" type="button">Click Me!</button>
+
+            <section class="row border result">
+                <p>{{FemaleName}} was a {{JobTitle}} who loved technology.</p>
+
+                <p> Although she loved parts of her job, she absolutely hated {{TediousTask}} and {{DirtyTask}}.</p>
+                <p> So, {{FemaleName}} met with her life mentor {{Celeberity}} who told her to learn how to {{UselessSkill}} with Thinkful.</p>
+                <p>Thinkful didn't offer a course on {{UselessSkill}} so she studied programming instead.</p>
+                <p>What a great decision! With her new skills, {{FemaleName}} built a(n) {{Adjective}} robot named {{ObnoxiousCeleberity}} that not only loved {{DirtyTask}} but did it {{HugeNumber}} faster. </p>
+
+
+            </section>
+        </main>
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="myApp.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
