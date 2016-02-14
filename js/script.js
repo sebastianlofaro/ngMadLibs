@@ -1,7 +1,7 @@
 var questionNumber;
 
 function hideAllQuestions() {
-    $('#femaleName').hide();
+    $('.Name').hide();
     $('#jobTitle').hide();
     $('#tediousTask').hide();
     $('#dirtyTask').hide();
@@ -21,7 +21,7 @@ $(document).ready(function () {
     questionNumber = 0;
 });
 
-var questionArray = ["#femaleName", "#jobTitle", "#tediousTask", "#dirtyTask", "#celeberity", "#uselessSkill", "#obnoxiousCeleberity", "#hugeNumber", "#adjective", ".result"]
+var questionArray = [".Name", "#jobTitle", "#tediousTask", "#dirtyTask", "#celeberity", "#uselessSkill", "#obnoxiousCeleberity", "#hugeNumber", "#adjective", ".result"]
 
 
 
@@ -32,3 +32,21 @@ $(document).on('click', '.nextButton', function () {
         questionNumber++;
     }
 })
+
+
+
+//******************* Angular ******************
+
+var app = angular.module('myApp', [])
+
+app.controller('madLibController', function ($scope) {
+    $scope.$watch('data.gender', function (genderOf) {
+        if (genderOf == 'male') {
+            $scope.SheHe = 'he';
+            $scope.HerHis = 'his';
+        } else {
+            $scope.SheHe = 'she';
+            $scope.HerHis = 'her';
+        }
+    })
+});
